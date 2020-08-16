@@ -48,7 +48,6 @@ label {
 }
 
 table {
-    text-align: start;
     border: 1px solid;
     border-radius: 8px;
     margin-block-start: 20px;
@@ -58,14 +57,11 @@ table {
   }
 
   tr {
+    text-align: center;
     height: 68px;
     background: rgba(0, 127, 189, 0.03);
     border-radius: 10px 10px 0px 0px;
   }
-  th, td {
-      margin-left: 1rem;
-      text-align: start;
-  }
-.body {
-      background-color: #ffff;
-  }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

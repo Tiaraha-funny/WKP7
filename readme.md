@@ -1,22 +1,43 @@
 # WKP7 - Library
+### This website is about creating lists of books which have been read or unread.
 
-### Hey team!
+Who doesn't like reading a book?  😄
 
-Hope you are ready for a new challenge. I have a nice one for you this week. We're going to build a library management application. The application will consist on a form to add a book, and a table listing all the books. After submitting the form, the new book will appear on the book table.
+I am going to build a list of books and the user are allowed to add thier own book in the lists. In addition, they can delete anybook at anytime they want.
 
-### Here is the mockup of our library app.
+## 1- What I have done to code this website
 
-![assets/wkp7-library.png](assets/wkp7-library.png)
+- I build a html and named the class needed
+- I drag the elements wich I need from the html
+- I created html in my js code for setting the lists 
+- I created another html to add the input that the users added
 
-[You can also access the design through figma.](https://www.figma.com/file/FoD2jZb5oOGZvTUMop0nbA/WKP7?node-id=1%3A2)
+## 2- Difficulties
 
-### A book needs those attributes :
+I faced a lot of problems which is not solved till now
+- Getting the checkbox works properly
+- delete button doesn't delete the list which the user want to be deleted
+- The input that the users added is reapeted twice in the list table
+ 
+## 3- Things needed to improve
 
--   A title
--   An author
--   A genre (Mystery, Thriller, Fiction, Non-fiction, Fantasy, Design, Memoirs...)
--   A number of pages
--   A status (Read or not)
+- I am still strugling to use the dataset and the id.
+
+## 4- Something new
+
+Having the local storage is still new to me but I still need some effort to it.
+
+## 5- More explanation
+
+I need more explanation about using dataset and the id, and also, the local storage.
+
+## 6- Throwing error
+
+I have got error that I couldn't solve. When I click my delete button, it throws an error. However, If I comment out the delete button function, it is gone but the delete don't work at all.
+
+### ****Message***
+I am so sorry that there are many things that is not finished in this project. I really didn't find any way to solve them. I still need some push from anyone especially our teacher.
+**Thanks !!**
 
 ### Requirements :
 
