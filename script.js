@@ -63,7 +63,7 @@ const HtmlOfTheTableList = book.map(newBook => `
         <input type="checkbox" id="${newBook.status}">
       </td>
       <td><button class="delete">delete</button></td>
-  </tr><hr>
+  </tr>
   `).join('');
   tableList.insertAdjacentHTML("afterend", HtmlOfTheTableList);
 
@@ -111,7 +111,7 @@ const newTableFromTheState = () => {
         <input type="checkbox" ${bookState.status === "read" ? "checked" : ""}>
       </td>
       <td><button class="delete">delete</button></td>
-  </tr><hr>`).join('');
+  </tr>`).join('');
   tableList.insertAdjacentHTML("afterend", HTML);
   form.reset();
 }
