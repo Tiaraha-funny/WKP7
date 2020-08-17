@@ -78,7 +78,6 @@ const handleAddSubmitBtn = e => {
   e.preventDefault();
 
   const form = e.currentTarget;
-    // const {title, author, genre, pages, status} = form;
         
     const myBook = {
       title:form.title.value,
@@ -114,7 +113,21 @@ const newTableFromTheState = () => {
       <td><button class="delete">delete</button></td>
   </tr><hr>`).join('');
   tableList.insertAdjacentHTML("afterend", HTML);
+  form.reset();
 }
+
+const handleDeleteButton = e => {
+  const id = e.target.value;
+  if(e.target.matches('button.delete')) {
+    mybooks = mybooks.filter(item => item.id !== id);
+    tableList.remove(newTableFromTheState());
+    }
+    if(e.target.matches('input[type="checkbox"]')) {
+      const itemsBook = mybooks.find(item => item.id === id);
+      itemsBook.complete = !itemsBook.complete;
+    newTableFromTheState();
+    }
+};
 
 // local storage is to set the key and value and get the value of the item wich we give
 const toLocalStorage = () => { 
@@ -133,13 +146,6 @@ const restoreFromLocalStorage = () => {
     toLocalStorage();
 };
 
-const handleDeleteButton = e => {
-  const id = e.target.value;
-  if(e.target.matches('button.delete')) {
-    mybooks = mybooks.filter(item => item.id !== id);
-    newTableFromTheState();
-    }
-}
 
 
  //We listen to our own event, and launch the function table of the added book functon by the listners which we have created
